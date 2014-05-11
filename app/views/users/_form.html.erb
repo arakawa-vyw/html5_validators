@@ -16,8 +16,11 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :sex %><br>
-    <%= f.number_field :sex %>
+    <%= f.label :sex %>
+    <%= f.label :sex, "Male", value: 1 %>
+    <%= f.radio_button :sex, 1 %>
+    <%= f.label :sex, "Female", value: 2 %>
+    <%= f.radio_button :sex, 2 %>
   </div>
   <div class="field">
     <%= f.label :birthday %><br>
